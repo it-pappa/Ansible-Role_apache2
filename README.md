@@ -18,9 +18,12 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
+    - hosts: webserver
+      become: yes
+      gather_facts: true
+
       roles:
-         - { role: username.rolename, x: 42 }
+      - provision_apache2
 
 License
 -------
