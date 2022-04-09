@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  role_name: provision_apache2
+  author: Dan Eckholm
+  description: Install Apache2 service on Linux hosts
+  license: BSD-3-Clause
+  min_ansible_version: 2.11
+  platforms:
+    - name: RockyLinux
+      versions:
+        - 8.5
+    - name: RHEL
+      versions:
+        - 8
+    - name: Ubuntu
+      versions:
+        - 20.04
+  galaxy_tags:
+    - linux
+    - Apache2
+    - web

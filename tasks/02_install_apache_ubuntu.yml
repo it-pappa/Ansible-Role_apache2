@@ -1,0 +1,14 @@
+---
+- name: Install apache2
+  ansible.builtin.apt: 
+    name: apache2 
+    update_cache: yes 
+    state: latest
+
+- name: enabled mod_rewrite
+  community.general.apache2_module:
+    state: present
+    name: rewrite
+  notify:
+  - restart apache2 ubuntu
+  

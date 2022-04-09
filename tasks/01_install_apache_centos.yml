@@ -1,0 +1,20 @@
+---
+- name: Install apache2
+  dnf:
+    name: httpd
+    state: latest
+
+- name: Enable service to start on boot
+  ansible.builtin.service: 
+    name: httpd
+    state: started
+
+- name: Create firewall rule for apache2 service
+  ansible.posix.firewalld:
+    service: http
+    zone: public
+    permanent: yes
+    immediate: yes
+    state: enabled
+  notify:
+  - restart apache2 centos

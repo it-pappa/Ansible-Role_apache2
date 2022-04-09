@@ -1,0 +1,12 @@
+---
+# handlers file for provision_apache2
+- name: restart apache2 ubuntu
+  ansible.builtin.service:
+    name: apache2 
+    state: restarted
+
+
+- name: restart apache2 centos
+  ansible.builtin.service:
+    name: httpd
+    state: restarted

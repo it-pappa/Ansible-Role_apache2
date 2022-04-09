@@ -1,0 +1,7 @@
+---
+# tasks file for provision_apache2
+
+- ansible.builtin.include: 01_install_apache_centos.yml
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux' or ansible_distribution == 'Rocky'
+- ansible.builtin.include: 02_install_apache_ubuntu.yml
+  when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
