@@ -6,16 +6,16 @@ galaxy_info:
   license: BSD-3-Clause
   min_ansible_version: 2.11
   platforms:
-    - name: RockyLinux
+    - name: rockyLinux
       versions:
         - 8.5
-    - name: RHEL
+    - name: rhel
       versions:
         - 8
-    - name: Ubuntu
+    - name: ubuntu
       versions:
         - 20.04
   galaxy_tags:
     - linux
-    - Apache2
+    - apache2
     - web
