@@ -1,16 +1,19 @@
----
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: frobs-awesome
-  description: |
-    Backend service that implements the Frobs API, as defined
-    in [the Frobs RFC](https://example.com/spec/frob.html).
-  labels:
-    system: frobs
-    lifecycle: production
-    example.com/service-discovery-name: frobsawesome
+  name: restart-service
+  description: restarts a service
+  tags:
+    - ansible
+  links:
+    - url: https://example.com/user
+      title: servicedesk
+      icon: user
+
   annotations:
-    circleci.com/project-slug: github/example-org/frobs-awesome
+    backstage.io/linguist: 'https://github.com/it-pappa/Ansible-Role_apache2/'
 spec:
   type: service
+  lifecycle: experimental
+  owner: adm-team
+  system: this-system
