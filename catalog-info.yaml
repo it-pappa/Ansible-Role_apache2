@@ -7,8 +7,7 @@ metadata:
   links:
     - title: AAP
       url: https://bing.com
-    - title: Service Desk form
-      url: https://google.com
+
 spec:
   type: Automation
   owner: adm-name
