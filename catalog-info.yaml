@@ -6,9 +6,9 @@ metadata:
     Ansible Playbook to update apache server
   links:
     - title: AAP
-      url: #
+      url: https://bing.com
     - title: Service Desk form
-      url: #
+      url: https://google.com
 spec:
   type: Automation
   owner: adm-name
