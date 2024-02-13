@@ -2,20 +2,19 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Restart Service
-  description: Restarts a service
+  description: Ansible job to restart service
   tags:
     - ansible
   links:
-    - url: https://aap.int
-      title: Automation Plattform
-      icon: user
-    - url: https://sd.int
+    - url: https://example.com/user
       title: Service Desk
       icon: user
+    - url: https://example.com/group
+      title: AAP
+      icon: group
 
 spec:
-  type: Service
-  lifecycle: Production
-  owner: Admin Team
-  system: Ansible
-
+  type: service
+  lifecycle: experimental
+  owner: admin 1
+  system: admin-group
