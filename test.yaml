@@ -14,7 +14,7 @@ metadata:
       icon: user
 
 spec:
-  type: Automation
+  type: Service
   lifecycle: Production
   owner: Admin Team
   system: Ansible
