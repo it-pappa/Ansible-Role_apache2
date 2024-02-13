@@ -10,3 +10,4 @@ metadata:
     circleci.com/project-slug: https://github.com/it-pappa/Ansible-Role_apache2
 spec:
   type: service
+  lifecycle: production
