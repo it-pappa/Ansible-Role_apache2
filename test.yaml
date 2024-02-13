@@ -15,5 +15,5 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: adm-team
+  owner: 'adm-team'
   system: this-system
