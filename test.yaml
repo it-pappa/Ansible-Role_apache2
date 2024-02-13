@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: restart-service
+  name: ansible
   description: |
     Restarts windows services).
   tags:
