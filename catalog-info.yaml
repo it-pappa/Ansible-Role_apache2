@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Ansible-Apache
+  description: |
+    Ansible Playbook to update apache server
+  links:
+    - title: AAP
+      url: #
+    - title: Service Desk form
+      url: #
+spec:
+  type: Automation
+  owner: adm-name
+  lifecycle: experimental
